@@ -1,0 +1,16 @@
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--main-gray);
+}
+
+.percent {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.people {
+    font-size: 17px;
+    font-weight: 500;
+}

@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    max-height: 100px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.logo{
+    display: flex;
+    height: 40px;
+    width: 170px;
+}
+
+.image{
+    height: 100%;
+}
+.tite {
+    margin: 0;
+}

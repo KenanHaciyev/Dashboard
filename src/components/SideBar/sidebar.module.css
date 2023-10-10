@@ -1,0 +1,13 @@
+.navigation {
+	margin-top: 6px;
+}
+
+.active {
+	filter: invert(31%) sepia(88%) saturate(1547%) hue-rotate(201deg) brightness(102%) contrast(103%);
+}
+
+.itemsWrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
