@@ -5,6 +5,11 @@
     color: var(--main-gray);
 }
 
+.wrap{
+    font-size: 14px;
+    display: block;
+}
+
 .percent {
     font-size: 30px;
     font-weight: 600;

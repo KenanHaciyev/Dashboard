@@ -1,0 +1,28 @@
+.wrap{
+    color: var(--dark-blue);
+    width: 270px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.details {
+    display: block;
+    text-align: left;
+    width: 220px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.occupancy{
+    margin-bottom: 10px;
+}
+
+.criteria {
+    margin: 10px 0 20px;
+}
+

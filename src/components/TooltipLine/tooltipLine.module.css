@@ -1,0 +1,21 @@
+.guidelines{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.guidelines__left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.symbol {
+    padding: 0 5px;
+    font-size: 11px;
+    border: 1px solid gray;
+    border-radius: 100%;
+    color: gray;
+    cursor: pointer;
+}

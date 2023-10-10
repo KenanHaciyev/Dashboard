@@ -1,0 +1,16 @@
+.wrap{
+    display: flex;
+    justify-content: space-around;
+}
+
+.content{
+    width: 190px;
+}
+
+.text{
+    margin-bottom: 5px;
+}
+
+.percent{
+    margin-bottom: 20px;
+}

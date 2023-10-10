@@ -1,26 +1,22 @@
 import React from 'react';
-import { Tabs } from 'antd';
-import type { TabsProps } from 'antd';
+import { ConfigProvider, Tabs } from 'antd';
+import { tabsPropsData } from '../../Data/tabsNavigation.data.ts';
 
-const onChange = (key: string) => {
-    console.log(key);
-};
 
-const items: TabsProps['items'] = [
-    {
-        key: '1',
-        label: 'Dallas Office',
-    },
-    {
-        key: '2',
-        label: 'Coppell Office',
-    },
-    {
-        key: '3',
-        label: 'Los Angeles Office',
-    },
-];
 
-const TabsNavigation: React.FC = () => <Tabs defaultActiveKey="1" items={items} onChange={onChange} />;
+const TabsNavigation: React.FC = () => (
+	<ConfigProvider
+		theme={{
+			components: {
+				Tabs: {
+					itemColor: 'var(--dark-blue)',
+					itemSelectedColor: 'var(--dark-blue)'
+				},
+			},
+		}}
+	>
+		<Tabs items={tabsPropsData} />
+	</ConfigProvider>
+);
 
 export default TabsNavigation;

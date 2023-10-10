@@ -1,0 +1,35 @@
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	color: var(--dark-blue);
+}
+
+.logo {
+	display: flex;
+	justify-content: flex-end;
+	height: 45px;
+	width: 170px;
+	margin-bottom: 20px;
+}
+
+.image {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.active {
+	filter: invert(31%) sepia(88%) saturate(1547%) hue-rotate(201deg) brightness(102%) contrast(103%);
+}
+
+.activeTitle {
+	font-weight: 500;
+}
+
+.itemsWrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 120px;
+}

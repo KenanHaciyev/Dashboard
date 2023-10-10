@@ -8,16 +8,18 @@ interface IProgressCircle {
 }
 
 const ProgressCircle: React.FC<IProgressCircle> = ({ percent, weeks }) => {
-	const [statusText, setStatusText] = useState('Possible');
+	const [statusText, setStatusText] = useState('');
+	const progressTextFormat = () => (
+		<div className={styles.info}>
+			<div className={styles.status}>{statusText}</div>
+			<div className={styles.percent}>{percent}%</div>
+		</div>
+	);
 
 	useEffect(() => {
-		if (percent >= 88 && percent <= 95) {
-			setStatusText('Likely');
-		} else if (percent > 95) {
-			setStatusText('Yes');
-		} else {
-			setStatusText('Possible');
-		}
+		const statusText =
+			percent >= 88 && percent <= 95 ? 'Likely' : percent > 95 ? 'Yes' : 'Possible';
+		setStatusText(statusText);
 	}, []);
 
 	return (
@@ -31,17 +33,12 @@ const ProgressCircle: React.FC<IProgressCircle> = ({ percent, weeks }) => {
 				}}
 			>
 				<Progress
-					type="circle"
+					type="dashboard"
+					gapDegree={5}
+					gapPosition="right"
 					percent={percent}
 					strokeWidth={9}
-					format={() => {
-						return (
-							<div className={styles.info}>
-								<div className={styles.status}>{statusText}</div>
-								<div className={styles.percent}>{percent}%</div>
-							</div>
-						);
-					}}
+					format={progressTextFormat}
 					strokeColor={percent >= 88 ? 'rgb(19 195 19 / 80%)' : 'rgb(255 186 0)'}
 					className={styles.progress}
 				/>
