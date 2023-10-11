@@ -1,9 +1,22 @@
-.navigation {
+.aside {
 	display: flex;
 	flex-direction: column;
-	justify-content: start;
+	justify-content: space-between;
 	align-items: center;
+	height: 90vh;
 	color: var(--dark-blue);
+	border-right: 1px solid #d3d3d373;
+	padding-bottom: 20px;
+}
+
+.top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 90vh;
+	color: var(--dark-blue);
+	border-right: 1px solid #d3d3d373;
+	padding-bottom: 20px;
 }
 
 .logo {

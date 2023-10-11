@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { ConfigProvider, Progress } from 'antd';
 import styles from './progressCircle.module.css';
 
-interface IProgressCircle {
+interface IProgressCircleProps {
 	percent: number;
 	weeks: number;
 }
 
-const ProgressCircle: React.FC<IProgressCircle> = ({ percent, weeks }) => {
+const ProgressCircle: React.FC<IProgressCircleProps> = ({ percent, weeks }) => {
 	const [statusText, setStatusText] = useState('');
 	const progressTextFormat = () => (
 		<div className={styles.info}>

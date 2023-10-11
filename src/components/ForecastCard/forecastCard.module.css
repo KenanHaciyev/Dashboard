@@ -1,11 +1,16 @@
 .wrapper{
     width: 550px;
     color: var(--dark-blue);
-    background-color: rgba(0,0,0,.08);
+    padding: 20px 13px;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 590px;
 }
 
 .title{
     margin-bottom: 30px;
+    font-size: 21px;
+    font-weight: 700;
 }
 
 .targets {
@@ -22,31 +27,14 @@
     border-radius: 3px;
 }
 
-.select {
-    width: 80px;
-    background-color: rgba(0, 0, 0, 0.06);
-    border: none;
-    border-radius: 4px;
-    outline: none;
-    font-weight: 500;
-    color: var(--dark-blue);
-    cursor: pointer;
-    margin-left: 5px;
-    padding: 3px 5px;
-}
-
-.progressWrap{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-}
-
 .small {
     display: block;
     margin-bottom: 10px;
 }
 
-.description {
+.footer {
     font-size: 13px;
-    padding: 0 10px;
+    padding: 3px 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
 }

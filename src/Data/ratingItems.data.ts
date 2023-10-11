@@ -1,8 +1,8 @@
 import { IRatingItems } from '../types/ratingItems';
-import virus from '../assets/icons/virus.svg';
-import smile from '../assets/icons/smile.svg';
-import syringe from '../assets/icons/syringe.svg';
-import mask from '../assets/icons/mask.svg';
+import virus from '../assets/icons/ratingIcons/virus.svg';
+import smile from '../assets/icons/ratingIcons/smile.svg';
+import syringe from '../assets/icons/ratingIcons/syringe.svg';
+import mask from '../assets/icons/ratingIcons/mask.svg';
 
 export const ratingItemsData: IRatingItems[] = [
 	{

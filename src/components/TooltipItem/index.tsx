@@ -1,18 +1,18 @@
 import React from 'react';
-import styles from './tooltipLine.module.css';
+import styles from './tooltipItem.module.css';
 import { Tooltip } from 'antd';
 
-interface ITooltipLineProps{
+interface ITooltipItemProps{
 	title: string,
 	titleTooltip: string,
 	text: string,
 	color: string
 }
 
-const TooltipLine: React.FC<ITooltipLineProps> = ({title, titleTooltip, text, color}) => {
+const TooltipItem: React.FC<ITooltipItemProps> = ({title, titleTooltip, text, color}) => {
 	return (
-		<div className={styles.guidelines} >
-			<div className={styles.guidelines__left}>
+		<div className={styles.wrap} >
+			<div className={styles.left}>
 				<div>{title}</div>
 				<Tooltip title={titleTooltip}>
 					<span className={styles.symbol} >?</span>
@@ -23,4 +23,4 @@ const TooltipLine: React.FC<ITooltipLineProps> = ({title, titleTooltip, text, co
 	);
 };
 
-export default TooltipLine;
+export default TooltipItem;

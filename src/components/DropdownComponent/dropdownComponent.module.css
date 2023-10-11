@@ -1,0 +1,38 @@
+.wrap{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile {
+    width: 30px;
+    height: 30px;
+    background-color: lightgrey;
+    border-radius: 100%;
+}
+
+.img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.dropDown{
+    color: var(--main-gray);
+    cursor: pointer;
+}
+
+.select {
+    width: 80px;
+    background-color: rgba(0, 0, 0, 0.06);
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    font-weight: 500;
+    color: var(--dark-blue);
+    cursor: pointer;
+    margin-left: 5px;
+    padding: 3px 5px;
+}

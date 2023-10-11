@@ -1,7 +1,7 @@
-import dashboard from '../components/LeftSideBar/icons/dashboard.svg';
-import forecast from '../components/LeftSideBar/icons/forecast.svg';
-import offices from '../components/LeftSideBar/icons/offices.svg';
-import employees from '../components/LeftSideBar/icons/employees.svg';
+import dashboard from '../assets/icons/sideBarIcons/dashboard.svg';
+import forecast from '../assets/icons/sideBarIcons/forecast.svg';
+import offices from '../assets/icons/sideBarIcons/offices.svg';
+import employees from '../assets/icons/sideBarIcons/employees.svg';
 import { INavigationItems } from '../types/navigationItems.js';
 
 export const navigationItems: INavigationItems[] = [

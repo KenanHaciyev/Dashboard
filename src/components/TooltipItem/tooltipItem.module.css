@@ -1,11 +1,13 @@
-.guidelines{
+.wrap{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f4f4f4;
+
 }
 
-.guidelines__left{
+.left{
     display: flex;
     align-items: center;
     gap: 10px;

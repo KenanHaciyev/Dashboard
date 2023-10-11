@@ -1,6 +1,16 @@
 .wrap{
     color: var(--dark-blue);
     width: 270px;
+    height: 590px;
+    padding: 20px 13px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.view {
+    padding: 2px 5px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
 }
 
 .header{
@@ -14,8 +24,10 @@
     display: block;
     text-align: left;
     width: 220px;
-    padding-left: 10px;
+    padding: 5px 3px 5px 10px;
     margin-bottom: 30px;
+    background-color: #f4f4f4;
+    border-radius: 7px;
 }
 
 .occupancy{

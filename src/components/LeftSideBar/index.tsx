@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { ConfigProvider, Tabs } from 'antd';
-import styles from './leftSidebar.module.css';
+
 import { navigationItems } from '../../Data/leftSideBar.data.ts';
+import DropdownComponent from '../DropdownComponent';
 import logo from '../../assets/img/logo.png';
+
+import styles from './leftSidebar.module.css';
 
 const SideBar: React.FC = () => {
 	const [active, setActive] = useState('0');
@@ -23,27 +26,30 @@ const SideBar: React.FC = () => {
 	});
 
 	return (
-		<div className={styles.navigation}>
-			<div className={styles.logo}>
-				<div className={styles.image}>
-					<img src={logo} alt="logo" />
+		<aside className={styles.aside}>
+			<div className={styles.top}>
+				<div className={styles.logo}>
+					<div className={styles.image}>
+						<img src={logo} alt="logo" />
+					</div>
+					<h3> Haven Diagnostics</h3>
 				</div>
-				<h3> Haven Diagnostics</h3>
-			</div>
-			<ConfigProvider
-				theme={{
-					components: {
-						Tabs: {
-							itemHoverColor: 'gray',
-							itemColor: 'var(--main-gray)',
-							itemSelectedColor: 'var(--dark-blue)',
+				<ConfigProvider
+					theme={{
+						components: {
+							Tabs: {
+								itemHoverColor: 'gray',
+								itemColor: 'var(--main-gray)',
+								itemSelectedColor: 'var(--dark-blue)',
+							},
 						},
-					},
-				}}
-			>
-				<Tabs tabPosition="right" activeKey={active} items={items} />
-			</ConfigProvider>
-		</div>
+					}}
+				>
+					<Tabs tabPosition="right" activeKey={active} items={items} />
+				</ConfigProvider>
+			</div>
+			<DropdownComponent isProfile={true} />
+		</aside>
 	);
 };
 
