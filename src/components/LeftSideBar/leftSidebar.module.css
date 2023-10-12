@@ -7,6 +7,7 @@
 	color: var(--dark-blue);
 	border-right: 1px solid #d3d3d373;
 	padding-bottom: 20px;
+	padding-right: 20px;
 }
 
 .top {
@@ -15,7 +16,6 @@
 	align-items: center;
 	height: 90vh;
 	color: var(--dark-blue);
-	border-right: 1px solid #d3d3d373;
 	padding-bottom: 20px;
 }
 
@@ -23,26 +23,11 @@
 	display: flex;
 	justify-content: flex-end;
 	height: 45px;
-	width: 170px;
+	width: 110px;
 	margin-bottom: 20px;
 }
 
 .image {
 	display: flex;
 	justify-content: flex-end;
-}
-
-.active {
-	filter: invert(31%) sepia(88%) saturate(1547%) hue-rotate(201deg) brightness(102%) contrast(103%);
-}
-
-.activeTitle {
-	font-weight: 500;
-}
-
-.itemsWrap {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 120px;
 }

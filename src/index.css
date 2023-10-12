@@ -9,3 +9,29 @@
     --dark-blue: #013f6c;
     --main-gray: #777575d1;
 }
+
+.ant-menu{
+    background-color: transparent;
+}
+
+.ant-menu.ant-menu-root.ant-menu-vertical{
+    border-inline-end:unset;
+}
+
+.ant-menu-item.ant-menu-item-selected{
+    background-color: transparent;
+    position: relative;
+    border-radius: unset;
+}
+
+.ant-menu-item.ant-menu-item-selected::before{
+    position: absolute;
+    z-index: 4;
+    content: '';
+    left: -1px;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background-color: var(--main-blue);
+}
+

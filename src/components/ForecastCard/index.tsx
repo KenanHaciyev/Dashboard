@@ -8,7 +8,7 @@ import styles from './forecastCard.module.css';
 
 const ForecastCard: React.FC = () => {
 	return (
-		<div className={styles.wrapper}>
+		<section className={styles.wrapper}>
 			<header className={styles.title}>Forecast & recommendations</header>
 			<h5>Currently recommended occupancy:</h5>
 			<ProgressLine percent={39} people={37} />
@@ -30,7 +30,7 @@ const ForecastCard: React.FC = () => {
 				Current recommended occupancy would be <b>47% (45 people)</b> if your vaccination rate was{' '}
 				<b>38%</b> and your mask compliance rate was <b>30%</b>
 			</footer>
-		</div>
+		</section>
 	);
 };
 

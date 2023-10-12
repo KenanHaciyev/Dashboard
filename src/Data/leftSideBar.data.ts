@@ -1,23 +1,20 @@
-import dashboard from '../assets/icons/sideBarIcons/dashboard.svg';
-import forecast from '../assets/icons/sideBarIcons/forecast.svg';
-import offices from '../assets/icons/sideBarIcons/offices.svg';
-import employees from '../assets/icons/sideBarIcons/employees.svg';
-import { INavigationItems } from '../types/navigationItems.js';
+import { ILeftSideBarItemsData } from '../types/leftSideBarItems.data.ts';
 
-export const navigationItems: INavigationItems[] = [
+export const navigationItems: ILeftSideBarItemsData[] = [
 	{
 		title: 'Dashboard',
-		icon: dashboard
+		url: '/',
 	},
 	{
 		title: 'Forecast',
-		icon: forecast
+		url: '/forecast',
 	},
 	{
 		title: 'All offices',
-		icon: offices
+		url: '/offices',
 	},
 	{
 		title: 'Employees',
-		icon: employees
-	},]
+		url: '/employees',
+	},
+];
