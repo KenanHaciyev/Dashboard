@@ -3,7 +3,7 @@ import { Dropdown, Space } from 'antd';
 import React from 'react';
 
 import { items } from '../../Data/profileDropdown.data.ts';
-import profile from '../../assets/img/cat.webp';
+import profileImage from '../../assets/img/cat.webp';
 
 import styles from './dropdownComponent.module.css';
 
@@ -16,8 +16,8 @@ const DropdownComponent: React.FC<IDropdown> = ({ isProfile }) => {
 		<>
 			{isProfile ? (
 				<div className={styles.wrap}>
-					<div className={styles.profile}>
-						<img className={styles.img} src={profile} alt="profile" />
+					<div className={styles.profileImage}>
+						<img className={styles.img} src={profileImage} alt="profile" />
 					</div>
 					<Dropdown menu={{ items }} trigger={['click']}>
 						<Space className={styles.dropDown}>

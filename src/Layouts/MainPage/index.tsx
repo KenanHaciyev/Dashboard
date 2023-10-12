@@ -6,13 +6,13 @@ import { Outlet } from 'react-router-dom';
 
 const MainPage: React.FC = () => {
 	return (
-			<section className={styles.wrap}>
-				<LeftSideBar />
-				<main className={styles.content}>
-					<HeaderComponent />
-					<Outlet/>
-				</main>
-			</section>
+		<div className={styles.wrap}>
+			<LeftSideBar />
+			<main className={styles.content}>
+				<HeaderComponent />
+				<Outlet />
+			</main>
+		</div>
 	);
 };
 

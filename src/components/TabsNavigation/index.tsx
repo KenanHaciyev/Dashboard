@@ -9,7 +9,7 @@ const TabsNavigation: React.FC = () => {
 				components: {
 					Tabs: {
 						itemColor: 'var(--dark-blue)',
-						itemSelectedColor: 'var(--dark-blue)'
+						itemSelectedColor: 'var(--dark-blue)',
 					},
 				},
 			}}
@@ -17,6 +17,6 @@ const TabsNavigation: React.FC = () => {
 			<Tabs items={tabsPropsData} />
 		</ConfigProvider>
 	);
-}
+};
 
 export default TabsNavigation;

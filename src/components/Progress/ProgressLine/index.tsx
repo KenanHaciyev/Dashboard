@@ -12,15 +12,15 @@ const ProgressLine: React.FC<IProgressLineProps> = ({ percent, people, title }) 
 	return (
 		<div>
 			<div className={styles.info}>
-					{title && <div className={styles.title}>{title}</div>}
-					<div>
-						<span style={{ fontSize: isSmallFontSize }} className={styles.percent}>
-							{percent}%
-						</span>
-						<span style={{ fontSize: isSmallFontSize }} className={styles.people}>
-							{title ? ` (${people} people)` : ` ${people} people`}
-						</span>
-					</div>
+				{title && <div className={styles.title}>{title}</div>}
+				<div>
+					<span style={{ fontSize: isSmallFontSize }} className={styles.percent}>
+						{percent}%
+					</span>
+					<span style={{ fontSize: isSmallFontSize }} className={styles.people}>
+						{title ? ` (${people} people)` : ` ${people} people`}
+					</span>
+				</div>
 			</div>
 			<Progress
 				showInfo={false}

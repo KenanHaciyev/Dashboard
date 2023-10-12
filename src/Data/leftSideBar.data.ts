@@ -1,6 +1,6 @@
-import { ILeftSideBarItemsData } from '../types/leftSideBarItems.data.ts';
+import { ILeftSideBarItems } from '../types/leftSideBarItems';
 
-export const navigationItems: ILeftSideBarItemsData[] = [
+export const navigationItems: ILeftSideBarItems[] = [
 	{
 		title: 'Dashboard',
 		url: '/',

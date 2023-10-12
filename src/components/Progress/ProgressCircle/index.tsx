@@ -17,9 +17,12 @@ const ProgressCircle: React.FC<IProgressCircleProps> = ({ percent, weeks }) => {
 	);
 
 	useEffect(() => {
-		const statusText =
-			percent >= 88 && percent <= 95 ? 'Likely' : percent > 95 ? 'Yes' : 'Possible';
-		setStatusText(statusText);
+		const defineStatusText = () => {
+			if (percent >= 88 && percent <= 95) return 'Likely';
+			if (percent > 95) return 'Yes';
+			return 'Possible';
+		};
+		setStatusText(defineStatusText());
 	}, []);
 
 	return (

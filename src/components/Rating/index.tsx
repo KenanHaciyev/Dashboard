@@ -10,7 +10,7 @@ interface IRatingProps {
 const Rating: React.FC<IRatingProps> = ({ text, color, percent, iconUrl }) => {
 	return (
 		<div className={styles.wrap}>
-			<div className={styles.img} >
+			<div className={styles.img}>
 				<img src={iconUrl} alt="icon" />
 			</div>
 			<div className={styles.content}>

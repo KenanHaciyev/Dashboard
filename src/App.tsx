@@ -2,9 +2,9 @@ import { NavigateFunction, Route, Routes, useNavigate } from 'react-router-dom';
 import MainPage from './Layouts/MainPage';
 import Promo from './components/Promo';
 
+import { lazy, Suspense, useEffect } from 'react';
 import { Col, Layout, Row } from 'antd';
 import './App.css';
-import { lazy, Suspense, useEffect } from 'react';
 
 function App() {
 	const ForeCastPage = lazy(() => import('./Layouts/ForeCastPage'));
