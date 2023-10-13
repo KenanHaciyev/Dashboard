@@ -1,16 +1,36 @@
 import { NavigateFunction, Route, Routes, useNavigate } from 'react-router-dom';
+import { Col, Layout, Row } from 'antd';
+import { useEffect } from 'react';
+
+import EmployeesPage from './Layouts/EmployeesPage';
+import ForeCastPage from './Layouts/ForeCastPage';
+import OfficesPage from './Layouts/OfficesPage';
 import MainPage from './Layouts/MainPage';
 import Promo from './components/Promo';
 
-import { lazy, Suspense, useEffect } from 'react';
-import { Col, Layout, Row } from 'antd';
 import './App.css';
 
 function App() {
-	const ForeCastPage = lazy(() => import('./Layouts/ForeCastPage'));
-	const OfficesPage = lazy(() => import('./Layouts/OfficesPage'));
-	const EmployeesPage = lazy(() => import('./Layouts/EmployeesPage'));
 	const navigate: NavigateFunction = useNavigate();
+
+	const routes = [
+		{
+			path: '/',
+			element: <Promo />,
+		},
+		{
+			path: 'forecast',
+			element: <ForeCastPage />,
+		},
+		{
+			path: 'offices',
+			element: <OfficesPage />,
+		},
+		{
+			path: 'employees',
+			element: <EmployeesPage />,
+		},
+	];
 
 	useEffect(() => {
 		navigate('/');
@@ -21,16 +41,13 @@ function App() {
 			<Row justify="center" align="middle" style={{ height: '100vh' }}>
 				<Col>
 					<Layout>
-						<Suspense fallback={<h2>Loading...</h2>}>
-							<Routes>
-								<Route path="/" element={<MainPage />}>
-									<Route index element={<Promo />} />
-									<Route path="forecast" element={<ForeCastPage />} />
-									<Route path="offices" element={<OfficesPage />} />
-									<Route path="employees" element={<EmployeesPage />} />
-								</Route>
-							</Routes>
-						</Suspense>
+						<Routes>
+							<Route path="/" element={<MainPage />}>
+								{routes.map((item, i) => {
+									return <Route key={i} path={item.path} element={item.element} />;
+								})}
+							</Route>
+						</Routes>
 					</Layout>
 				</Col>
 			</Row>
